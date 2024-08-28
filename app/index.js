@@ -11,6 +11,6 @@ app.use("/c", proxy(process.env.C_URL));
 
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "./index.html")));
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => `Listening for connections on port ${port}`);
