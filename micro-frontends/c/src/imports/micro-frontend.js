@@ -1,4 +1,3 @@
-<script>
   class C extends HTMLElement {
     constructor() {
       super();
@@ -40,7 +39,7 @@
               <label for="c__amount">Increase the counter</label>
               <input id="c__amount" type="number" name="amount" value="1" />
             </fieldset>
-            <button type="submit">submit!</button>  
+            <button type="submit">submit!</button>
           </form>
         `;
 
@@ -97,4 +96,3 @@
   }
 
   customElements.define("c-micro-frontend", C);
-</script>
