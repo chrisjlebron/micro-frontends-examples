@@ -10,12 +10,18 @@
     "micro-frontends/*"
   ],
   "scripts": {
-    "run-a": "npm run dev --workspace=micro-frontends/a",
-    "run-b": "npm run dev --workspace=micro-frontends/b",
-    "run-c": "npm run dev --workspace=micro-frontends/c",
-    "run-posts": "npm run dev --workspace=micro-frontends/posts",
-    "run-app": "npm run dev --workspace=app",
-    "dev": "concurrently --kill-others \"npm:run-*\""
+    "dev-a": "npm run dev --workspace=micro-frontends/a",
+    "dev-b": "npm run dev --workspace=micro-frontends/b",
+    "dev-c": "npm run dev --workspace=micro-frontends/c",
+    "dev-posts": "npm run dev --workspace=micro-frontends/posts",
+    "dev-app": "npm run dev --workspace=app",
+    "start-a": "npm start --workspace=micro-frontends/a",
+    "start-b": "npm start --workspace=micro-frontends/b",
+    "start-c": "npm start --workspace=micro-frontends/c",
+    "start-posts": "npm start --workspace=micro-frontends/posts",
+    "start-app": "npm start --workspace=app",
+    "dev": "concurrently --kill-others \"npm:dev-*\"",
+    "start": "concurrently --kill-others \"npm:start-*\""
   },
   "devDependencies": {
     "concurrently": "^3.6.1",
