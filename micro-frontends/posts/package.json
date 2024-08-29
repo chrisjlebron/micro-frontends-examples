@@ -1,9 +1,8 @@
 {
-  "name": "button",
+  "name": "posts",
   "version": "1.0.0",
-  "description": "Micro-frontend for the `button` service",
+  "description": "Micro-frontend for the `posts` service",
   "main": "index.js",
-  "author": "Benjamin Johnson <benjamin.d.johnson@icloud.com>",
   "license": "MIT",
   "private": false,
   "scripts": {

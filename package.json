@@ -5,12 +5,23 @@
   "repository": "https://github.com/benjamminj/micro-frontends-examples.git",
   "author": "Benjamin Johnson <benjamin.d.johnson@icloud.com>",
   "license": "MIT",
+  "workspaces":[
+    "app",
+    "micro-frontends/*"
+  ],
   "scripts": {
-    "run-a": "cd micro-frontends/a && npm run dev",
-    "run-b": "cd micro-frontends/b && npm run dev",
-    "run-c": "cd micro-frontends/c && npm run dev",
-    "run-app": "cd app && npm run dev",
-    "dev": "concurrently --kill-others \"npm:run-*\""
+    "dev-a": "npm run dev --workspace=micro-frontends/a",
+    "dev-b": "npm run dev --workspace=micro-frontends/b",
+    "dev-c": "npm run dev --workspace=micro-frontends/c",
+    "dev-posts": "npm run dev --workspace=micro-frontends/posts",
+    "dev-app": "npm run dev --workspace=app",
+    "start-a": "npm start --workspace=micro-frontends/a",
+    "start-b": "npm start --workspace=micro-frontends/b",
+    "start-c": "npm start --workspace=micro-frontends/c",
+    "start-posts": "npm start --workspace=micro-frontends/posts",
+    "start-app": "npm start --workspace=app",
+    "dev": "concurrently --kill-others \"npm:dev-*\"",
+    "start": "concurrently --kill-others \"npm:start-*\""
   },
   "devDependencies": {
     "concurrently": "^3.6.1",
