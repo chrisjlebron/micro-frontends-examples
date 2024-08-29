@@ -13,6 +13,7 @@
     "run-a": "npm run dev --workspace=micro-frontends/a",
     "run-b": "npm run dev --workspace=micro-frontends/b",
     "run-c": "npm run dev --workspace=micro-frontends/c",
+    "run-posts": "npm run dev --workspace=micro-frontends/posts",
     "run-app": "npm run dev --workspace=app",
     "dev": "concurrently --kill-others \"npm:run-*\""
   },

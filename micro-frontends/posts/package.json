@@ -1,0 +1,20 @@
+{
+  "name": "posts",
+  "version": "1.0.0",
+  "description": "Micro-frontend for the `posts` service",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "gh-pages": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

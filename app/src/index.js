@@ -9,6 +9,7 @@ const { name: appName } = require('../package.json')
 app.use("/a", proxy(process.env.A_URL));
 app.use("/b", proxy(process.env.B_URL));
 app.use("/c", proxy(process.env.C_URL));
+app.use("/posts", proxy(process.env.POSTS_URL));
 
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "./index.html")));
 
