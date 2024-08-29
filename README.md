@@ -17,4 +17,4 @@ It's set to install / run via [npm workspaces](https://docs.npmjs.com/cli/v8/usi
       npm run dev
       ```
 
-2. Navigate your browser to http://localhost:{PORT}, with `{PORT}` equal to the port defined in `/app/.env`
+2. Navigate your browser to http://localhost:{PORT}, with `{PORT}` equal to the port defined in [`/app/.env`](/app/.env)
