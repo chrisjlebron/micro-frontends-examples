@@ -4,7 +4,7 @@ const path = require("path");
 const proxy = require("express-http-proxy");
 const express = require("express");
 const app = express();
-const { name: appName } = require('./package.json')
+const { name: appName } = require('../package.json')
 
 app.use("/a", proxy(process.env.A_URL));
 app.use("/b", proxy(process.env.B_URL));
