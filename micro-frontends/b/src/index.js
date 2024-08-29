@@ -7,7 +7,7 @@ const { name: appName } = require("../package.json");
 
 app.use(express.static(path.join(__dirname, '/imports')))
 
-// Send down a basic html for the /posts.html for simpler testing
+// Send down a basic html for the /index.html for simpler testing
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/index.html')))
 
 const port = process.env.PORT || 3000
